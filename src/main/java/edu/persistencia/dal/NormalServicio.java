@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface NormalServicio {
 	
-	//Metodo para la insercion de un repostaje normal
+	//Metodo para la inserción de un repostaje normal
 	public void insertaRepostaje(Normal normal);
 	
-	//Metodo que muestra todos los repostages. 
+	//Metodo que muestra todos los repostajes. 
 	public List<Normal> todosRepostajes();
 
 }

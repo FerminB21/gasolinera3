@@ -67,12 +67,21 @@ public class RepostajeGasDTO {
 		}
 
 
-
 		//Constructores
 		public RepostajeGasDTO(int id_repoGas, Calendar fechaLlenado, double litrosRepostados, double coste,
 				String tipoCombustible) {
 			super();
 			this.id_repoGas = id_repoGas;
+			this.fechaLlenado = fechaLlenado;
+			this.litrosRepostados = litrosRepostados;
+			this.coste = coste;
+			this.tipoCombustible = tipoCombustible;
+		}
+		
+		public RepostajeGasDTO(Calendar fechaLlenado, double litrosRepostados, double coste,
+				String tipoCombustible) {
+			super();
+			this.id_repoGas = this.id_repoGas;
 			this.fechaLlenado = fechaLlenado;
 			this.litrosRepostados = litrosRepostados;
 			this.coste = coste;

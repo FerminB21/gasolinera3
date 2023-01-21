@@ -54,6 +54,14 @@ public class NormalDTO {
 		this.precio_Normal = precio_Normal;
 
 	}
+	
+	public NormalDTO(Calendar md_date_Normal, double precio_Normal) {
+		super();
+		this.id_Normal = this.id_Normal;
+		this.md_date_Normal = md_date_Normal;
+		this.precio_Normal = precio_Normal;
+
+	}
 
 	public NormalDTO() {
 		super();

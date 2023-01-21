@@ -9,6 +9,7 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
+//Repositorio, implementación de las interfaz
 @Repository
 public class RepostageGasServicioImp implements RespostajeGasServicio{
 
@@ -40,9 +41,10 @@ public class RepostageGasServicioImp implements RespostajeGasServicio{
 	}
 
 	public void borraUltimoLlenado() {
-		//Terminar borrado aqui!!!!!!!!!!!Hay que hacer la QUERY
-		List<Integer> repoReciente = entityManager.createQuery("SELECT repostajegas FROM Repostajegas repostajegas ORDER BY repostajegas.fechallenado DESC").getResultList();
-		entityManager.remove(repoReciente.get(0));
+		
+		List<RepostajeGas> listGasolinera = entityManager.createQuery("SELECT repostajeGas FROM RepostajeGas repostajeGas").getResultList();
+		int tamanioList = listGasolinera.size();
+		entityManager.remove(listGasolinera.get(tamanioList-1));
 		
 	}
 

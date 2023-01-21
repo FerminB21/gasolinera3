@@ -13,7 +13,7 @@ public interface RespostajeGasServicio {
 	//Inserta fecha de llenado del depósito.
 	public void llenadoDeposito(RepostajeGas gasolinera);
 	
-	//Elimina el último llenado de depósito.
+	//Elimina el último llenado de depósito de la galorinera.
 	public void borraUltimoLlenado();
 	
 	

@@ -13,7 +13,7 @@ import edu.persistencia.dal.Normal;
 import edu.persistencia.dal.NormalServicioImple;
 import edu.persistencia.dal.RepostageGasServicioImp;
 import edu.persistencia.dal.RepostajeGas;
-
+//Servicio para inyectar las implementaciones de los servicios de la capa DAL
 @Service
 public class Consultas {
 	

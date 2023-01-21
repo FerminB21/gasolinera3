@@ -76,6 +76,16 @@ public class FacturaDTO {
 		this.dni = dni;
 		this.matricula = matricula;
 	}
+	
+	public FacturaDTO(Calendar md_date_factura, double precio_factura, String dni,
+			String matricula) {
+		super();
+		this.id_factura = this.id_factura;
+		this.md_date_factura = md_date_factura;
+		this.precio_factura = precio_factura;
+		this.dni = dni;
+		this.matricula = matricula;
+	}
 
 	public FacturaDTO() {
 		super();

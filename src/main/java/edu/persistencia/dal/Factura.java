@@ -5,6 +5,8 @@ import java.util.GregorianCalendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -16,9 +18,11 @@ import javax.persistence.TemporalType;
 public class Factura {
 	
 	//Atributos
-	//Al fijar la equiqueta @Id podermos quitar de bajo los atributos unique y nullable,
-	//lo tendre en cuenta para las siguientes clases
+	//Al fijar la equiqueta @Id podemos quitar de bajo los atributos unique y nullable,
+	//lo tendré en cuenta para las siguientes clases
 	@Id
+	//Autoincrementable
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id_factura", unique = true, nullable = false) 
 	private int id_factura;
 	
