@@ -43,7 +43,9 @@ public class Main {
 		DTOaDAO dtoAdao = new DTOaDAO();
 		DAOaDTO daoAdto = new DAOaDTO();
 		
-		do {			
+		do {
+			System.out.println();
+			
 			//Mostramos el menu, introducimos el scan y guardamos la opción seleccionada
 			opcion = m.mostrarMenu(scan);
 			
@@ -117,6 +119,11 @@ public class Main {
 					RepostajeGasDTO gasDTO = daoAdto.repostGasDAOaDTO(gas);
 					System.out.println(gasDTO.toString());
 				}
+				
+				break;
+				
+			case 0:
+				System.out.println("Ha cerrado la aplicación. Gracias por usarla.");
 				
 				break;
 			
